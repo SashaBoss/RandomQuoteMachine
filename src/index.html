@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>
-    Random Quote Machine
-  </title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+    <title>
+        Random Quote Machine
+    </title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 </head>
-<body style="background-color: rgb(100,200,50);">
-<div class="container">
-<div class="jumbotron">
-  <div id="message">
-  <button id="newQuote" class="btn btn-primary">New Quote</button>
-  <a href="https://twitter.com/share" class="twitter-share-button" data-via="TheImaga" data-size="large">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-  var btn = document.querySelector('#newQuote');
-  btn.onclick = function(){
-    var place = document.querySelector('#message');
-    place.html("Text");
-  };
-</script>
+<body style="background-color: rgb(100,200,50); margin-top: 100px">
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-4">
+                    <p id="message">Quote initial</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="button-group" role="group">
+                        <button id="newQuote" class="btn btn-primary">New Quote</button>
+                        <button id="tweet" class="btn btn-primary"><i class="fa fa-twitter"> Tweet</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>By Aleksandr Maha</footer>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
